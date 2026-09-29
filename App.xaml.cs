@@ -11,7 +11,8 @@ namespace Kosci
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var window = new Window(new AppShell()) {Width = 800, Height = 600};
+            return window;
         }
     }
 }
